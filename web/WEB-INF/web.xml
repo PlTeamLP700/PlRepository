@@ -45,15 +45,12 @@
         <filter-name>characterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>
-                classpath:mvc-dispatcher-servlet.xml
-            </param-value>
+            <param-value>classpath:mvc-dispatcher-servlet.xml</param-value>
         </init-param>
         <load-on-startup>0</load-on-startup>
         <async-supported>true</async-supported>
@@ -62,8 +59,6 @@
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
-    <!--查看proxool运行情况，也可以不作配置的-->
     <servlet>
         <servlet-name>proxooladmin</servlet-name>
         <servlet-class>org.logicalcobwebs.proxool.admin.servlet.AdminServlet</servlet-class>
