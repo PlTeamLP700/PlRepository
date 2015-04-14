@@ -2,7 +2,7 @@
 <proxool-config>
    <proxool>
       <alias>Pool_dbname</alias>
-      <driver-url>jdbc:mysql://10.28.53.60:3306/daqin</driver-url>
+      <driver-url>jdbc:mysql://127.0.0.1:3306/test</driver-url>
       <driver-class>com.mysql.jdbc.Driver</driver-class>
       <driver-properties>
       <property name="user" value="root"/>
